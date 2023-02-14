@@ -1,6 +1,6 @@
 .begin {
   padding: 270px 0 187px;
-  background: url("../images/begin/beginBg.png") center/cover no-repeat fixed;
+  background: url("https://egemen.kz/media/2022/04/04/crop-4_9_777x1182_news_full15725985929750265c0c2e4d3671b31f064f8d3910.jpg") center/cover no-repeat fixed;
   position: relative;
   &::before {
     position: absolute;
@@ -9,7 +9,8 @@
     content: '';
     width: 100%;
     height: 100%;
-    background: linear-gradient(90deg, rgba(213, 32, 71, 0.8) 0%, rgba(238, 61, 27, 0.8) 100%);
+    //background: linear-gradient(90deg, rgba(213, 32, 71, 0.8) 0%, rgba(238, 61, 27, 0.8) 100%);
+    background: #00000090;
   }
   &__info {
     position: relative;

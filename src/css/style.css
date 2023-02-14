@@ -14,34 +14,14 @@
   padding: 0 20px;
 }
 
-.swiper {
-  width: 50%;
-}
-
-.swiper-slide {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 18px;
-  font-size: 22px;
-  font-weight: bold;
-  color: #fff;
-}
-
-.swiper-slide img {
-  width: 100%;
-}
-
-.swiper-3d .swiper-slide-shadow {
-  background: none;
-}
-
 .header {
   width: 100%;
-  position: absolute;
-  top: 50px;
+  position: fixed;
+  padding: 25px 0;
+  top: 0;
   left: 0;
   z-index: 4;
+  background: #333333;
 }
 .header__nav {
   display: flex;
@@ -141,7 +121,7 @@
     background: transparent;
   }
   .show-mobile-btn span::before,
-.show-mobile-btn span::after {
+  .show-mobile-btn span::after {
     top: 0;
     bottom: 0;
     margin: auto;
@@ -190,7 +170,7 @@
 }
 .begin {
   padding: 270px 0 187px;
-  background: url("../images/begin/beginBg.png") center/cover no-repeat fixed;
+  background: url("https://egemen.kz/media/2022/04/04/crop-4_9_777x1182_news_full15725985929750265c0c2e4d3671b31f064f8d3910.jpg") center/cover no-repeat fixed;
   position: relative;
 }
 .begin::before {
@@ -200,7 +180,7 @@
   content: "";
   width: 100%;
   height: 100%;
-  background: linear-gradient(90deg, rgba(213, 32, 71, 0.8) 0%, rgba(238, 61, 27, 0.8) 100%);
+  background: rgba(0, 0, 0, 0.5647058824);
 }
 .begin__info {
   position: relative;
@@ -371,14 +351,19 @@
   display: flex;
   flex-wrap: wrap;
   column-gap: 30px;
+  row-gap: 60px;
+  margin-bottom: 100px;
 }
 .features__card {
-  width: calc(33.33333% - 20px);
+  width: calc(50% - 15px);
   position: relative;
 }
 .features__img {
   width: 100%;
+  height: 400px;
   position: relative;
+  object-fit: cover;
+  border-radius: 10px;
 }
 .features__info {
   position: absolute;
@@ -387,7 +372,7 @@
   transform: translate(-50%, 50%);
   text-align: center;
   padding: 33px 33px 25px;
-  width: 293px;
+  width: 450px;
   background: #FFFFFF;
   box-shadow: 0 5px 30px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
@@ -415,6 +400,15 @@
   line-height: 43px;
   text-align: center;
   margin-bottom: 63px;
+}
+.features .pupilSwiper__card {
+  width: 100%;
+}
+.features .pupilSwiper__card img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
 }
 
 @media (max-width: 992px) {
@@ -466,11 +460,21 @@
 }
 .technology__row {
   display: flex;
+  flex-wrap: wrap;
   column-gap: 50px;
 }
 .technology__card {
-  width: calc(25% - 37.5px);
+  width: calc(50% - 25px);
   text-align: center;
+}
+.technology__card img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+.technology__card.seo {
+  width: calc(33.33333% - 33.333333px);
+  margin: 0 auto;
 }
 .technology__card-title {
   font-weight: 700;
